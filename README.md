@@ -11,7 +11,7 @@ select id, chunk_crc, count(*) as c, chunks.* from images inner join chunks on c
 | 2065318829 | 4064  | IHDR |      | 2065318829 |
 | 2923585666 | 4065  | IEND |      | 2923585666 |
 
-This graph table everything that went wrong with my project:
+This table represents everything that went wrong with my project:
 - the only duplicate chunks are IHDR and IEND
 	- IHDR contains the core metadata of a PNG (dimensions, color, etc) and my
 	[dataset](https://www.gwern.net/Crops) very intenionally normalizes the resolution
